@@ -106,6 +106,7 @@ var PHRASE_LIST = [
     "Villain calls Judy cute",
     "Temporary bird sidekick",
     "Parrot repeating things",
+    "Junior ZPD Officer Sticker",
 ];
 
 // From https://github.com/bryc/code/blob/master/jshash/experimental/cyrb53.js
