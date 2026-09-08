@@ -63,7 +63,7 @@ var PHRASE_LIST = [
     "ACRacebest cameo",
     "Nocturnal District",
     "Eagles (band) reference",
-    "Eagles (football team) reference",
+    "Eagles (football&nbsp;team) reference",
     "Long timeskip after Z2",
     "Post Credits Scene",
     "They go where birds are from",
