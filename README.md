@@ -214,7 +214,7 @@ function generate() {
 
 // connect to button and generate intial page
 document.getElementById('generate').onclick = function() { generate(); }
-document.getElementById('seed').onKeyDown = function(event) {
+document.getElementById('seed').onkeydown = function(event) {
     if (event.key === "Enter") {
         event.preventDefault();
         generate();
