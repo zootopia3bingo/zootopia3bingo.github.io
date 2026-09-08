@@ -207,6 +207,11 @@ function generate() {
             // Misc styling
             element.style.textAlign = "center";
             element.style.verticalAlign = "middle";
+                element.style.fontSize = `${size}px`;
+                if (element.scrollWidth <= element.width && element.scrollHeight <= element.height) {
+                    break;
+                }
+            }
         }
     }
 }
