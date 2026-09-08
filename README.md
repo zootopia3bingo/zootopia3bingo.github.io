@@ -60,7 +60,7 @@ var PHRASE_LIST = [
     "Bonnie and Stu matter to plot",
     "a Hopps sibling named & speaks",
     "Brennan Lee Mulligan cameo",
-    "ACRaceBest cameo",
+    "ACRacebest cameo",
     "Nocturnal District",
     "Eagles (band) reference",
     "Eagles (football team) reference",
