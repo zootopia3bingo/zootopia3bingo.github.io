@@ -46,9 +46,12 @@ Based on Alex Irpan's [Mystery Hunt Bingo](https://www.alexirpan.com/mystery-hun
 </div>
 
 <script>
+const SEED_LENGTH = 10;
+const CURRENT_VERSION = 'A';
 var PHRASE_LIST = [
     "Bellwether returns",
     "Pawbert returns",
+    "Lionheart returns",
     "Twist villain",
     "Twist hero",
     "Nick's family",
@@ -57,6 +60,7 @@ var PHRASE_LIST = [
     "Bonnie and Stu matter to plot",
     "a Hopps sibling named & speaks",
     "Brennan Lee Mulligan cameo",
+    "ACRaceBest cameo",
     "Nocturnal District",
     "Eagles (band) reference",
     "Eagles (football team) reference",
@@ -64,26 +68,36 @@ var PHRASE_LIST = [
     "Post Credits Scene",
     "They go where birds are from",
     "Fakeout death",
-    "Gazelle",
+    "Major character death",
+    "new Gazelle song",
     "Reference to other WDAS movies",
     "Bogo retires",
     "New mayor",
     "Teases another sequel",
     "Dance party end credits",
-    "Judy leaves the force",
-    "Nick leaves the force",
-    "Gary works for the police",
+    "Judy leaves the police",
+    "Nick leaves the police",
     "Doctor Fuzzby",
     "Three Wheeled Jokemobile",
     "It's called a something, sweetheart",
     "The Hustle by Van McCoy",
+    "Shut Up And Dance by Walk The Moon",
     "Whoopsie, double whoopsie",
     "Junior Ranger Scouts",
-    "Mr. Big helps",
+    "Mr. Big",
     "Nick's apartment",
     "Judy's apartment",
     "Bucky & Pronk on-screen",
     "Villain knows about the carrot pen",
+    "Nibbles' Innuendo",
+    "Judy's fear of nudity",
+    "Hybrids",
+    "Coyote chases Roadrunner",
+    "Anthropomorphized Rio characters",
+    "Anthropomorphized Ice Age characters",
+    "G.O.A.T. reference",
+    "KPDH reference",
+    "Weaselton, somehow",
 ];
 
 // From https://github.com/bryc/code/blob/master/jshash/experimental/cyrb53.js
@@ -119,24 +133,20 @@ function mulberry32(a) {
 function cleanSeed(seed) {
     var cleaned = seed.replace(/[^0-9a-zA-Z]/g, '');
     cleaned = cleaned.toUpperCase();
-    return cleaned;
+    var version = cleaned.substr(0, -SEED_LENGTH);
+    return [version, cleaned.substr(-SEED_LENGTH)];
 }
 
-function shuffle(array, prng) {
-    var currentIndex = array.length
-      , temporaryValue
-      , randomIndex
-      ;
+function shuffle(array, prng, limit=array.length) {
 
     // While there remain elements to shuffle...
-    while (0 !== currentIndex) {
+    for (var currentIndex = 0; currentIndex < 24; currentIndex++) {
 
       // Pick a remaining element...
-      randomIndex = Math.floor(prng() * currentIndex);
-      currentIndex -= 1;
+      const randomIndex = currentIndex + Math.floor(prng() * (limit - currentIndex));
 
       // And swap it with the current element.
-      temporaryValue = array[currentIndex];
+      const temporaryValue = array[currentIndex];
       array[currentIndex] = array[randomIndex];
       array[randomIndex] = temporaryValue;
     }
@@ -146,9 +156,9 @@ function shuffle(array, prng) {
 
 function randomSeed() {
     const chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789';
-    let lst = [];
-    for (var i = 0; i < 9; i++) {
-        lst[i] = chars.charAt(Math.floor(Math.random() * chars.length));
+    let lst = [CURRENT_VERSION];
+    for (var i = 0; i < SEED_LENGTH; i++) {
+        lst.push(chars.charAt(Math.floor(Math.random() * chars.length)));
     }
     return lst.join('');
 }
@@ -165,8 +175,8 @@ function generate() {
         console.log(seedElem.value);
         seedElem.value = randomSeed();
     }
-    var cleaned = cleanSeed(seedElem.value);
-    var prng = mulberry32(cyrb53(cleanSeed(seedElem.value)));
+    var [version, cleaned] = cleanSeed(seedElem.value);
+    var prng = mulberry32(cyrb53(cleaned));
 
     var phraseList;
 
