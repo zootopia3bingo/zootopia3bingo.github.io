@@ -108,6 +108,8 @@ var PHRASE_LIST = [
     "Parrot repeating things",
     "Junior ZPD Officer Sticker",
     "Stool Pigeon Informant",
+    "Bunny Cop Before Judy",
+    "Bunny Cop Inspired by Judy",
 ];
 
 // From https://github.com/bryc/code/blob/master/jshash/experimental/cyrb53.js
