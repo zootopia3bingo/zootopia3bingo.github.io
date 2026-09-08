@@ -101,7 +101,7 @@ var PHRASE_LIST = [
     "Nick has a new tie and shirt",
     "Rabbit Season! Duck Season!",
     "Cow and Chicken",
-    "Harebrained/Birdbrained",
+    "Harebrained / Birdbrained",
     "Judy lets Nick say cute",
     "Villain calls Judy cute",
     "Temporary bird sidekick",
