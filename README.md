@@ -69,7 +69,7 @@ var PHRASE_LIST = [
     "They go where birds are from",
     "Fakeout death",
     "Major character death",
-    "new Gazelle song",
+    "New Gazelle song",
     "Reference to other WDAS movies",
     "Bogo retires",
     "New mayor",
