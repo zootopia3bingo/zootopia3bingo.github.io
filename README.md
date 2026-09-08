@@ -191,7 +191,6 @@ function generate() {
     // Shuffle then take first 24 entries.
     phraseList = [...PHRASE_LIST];
     phraseList = shuffle(phraseList, prng);
-    const MAX_SIZE = 20, MIN_SIZE = 10;
 
     var count = 0;
     for (i = 0; i < 5; i++) {
@@ -208,12 +207,6 @@ function generate() {
             // Misc styling
             element.style.textAlign = "center";
             element.style.verticalAlign = "middle";
-            for (var size = MAX_SIZE; size >= MIN_SIZE; size--) {
-                element.style.fontSize = `${size}px`;
-                if (element.scrollWidth <= element.width && element.scrollHeight <= element.height) {
-                    break;
-                }
-            }
         }
     }
 }
