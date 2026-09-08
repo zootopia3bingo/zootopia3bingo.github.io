@@ -107,6 +107,7 @@ var PHRASE_LIST = [
     "Temporary bird sidekick",
     "Parrot repeating things",
     "Junior ZPD Officer Sticker",
+    "Stool Pigeon Informant",
 ];
 
 // From https://github.com/bryc/code/blob/master/jshash/experimental/cyrb53.js
