@@ -93,11 +93,19 @@ var PHRASE_LIST = [
     "Judy's fear of nudity",
     "Hybrids",
     "Coyote chases Roadrunner",
-    "Anthropomorphized Rio characters",
-    "Anthropomorphized Ice Age characters",
+    "Anthropo\u00ADmorphized Rio characters",
+    "Anthropo\u00ADmorphized Ice Age characters",
     "G.O.A.T. reference",
     "KPDH reference",
     "Weaselton, somehow",
+    "Nick has a new tie and shirt",
+    "Rabbit Season! Duck Season!",
+    "Cow and Chicken",
+    "Harebrained/Birdbrained",
+    "Judy lets Nick say cute",
+    "Villain calls Judy cute",
+    "Temporary bird sidekick",
+    "Parrot repeating things",
 ];
 
 // From https://github.com/bryc/code/blob/master/jshash/experimental/cyrb53.js
