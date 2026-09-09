@@ -126,6 +126,7 @@ var PHRASE_LIST = [
     "Bad Bunny (moral judgment)",
     "\"Murder of Crows\" joke",
     "Pigeonhole Principle",
+    "\"Duck Duck Goose\" joke",
 ];
 
 // From https://github.com/bryc/code/blob/master/jshash/experimental/cyrb53.js
