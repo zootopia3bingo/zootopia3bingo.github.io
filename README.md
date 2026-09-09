@@ -113,6 +113,14 @@ var PHRASE_LIST = [
     "Someone's \"Nest&nbsp;Egg\" is a literal egg",
     "Accidental Carrot Pen playback",
     "Scuba Dance",
+    "Chicken dance done by chickens",
+    "Elements of Collar Plot reused",
+    "Heihei appears in background",
+    "Gideon Grey",
+    "Action happens in Bunnyburrow",
+    "Bogo active on the case",
+    "Real Outback Island visited",
+    "Outback Island neighborhood visited",
 ];
 
 // From https://github.com/bryc/code/blob/master/jshash/experimental/cyrb53.js
