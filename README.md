@@ -112,6 +112,7 @@ var PHRASE_LIST = [
     "Bunny Cop Inspired by Judy",
     "Someone's \"Nest&nbsp;Egg\" is a literal egg",
     "Accidental Carrot Pen playback",
+    "Scuba Dance",
 ];
 
 // From https://github.com/bryc/code/blob/master/jshash/experimental/cyrb53.js
