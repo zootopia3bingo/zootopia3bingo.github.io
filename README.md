@@ -122,6 +122,10 @@ var PHRASE_LIST = [
     "Real Outback Island visited",
     "Outback Island neighborhood visited",
     "<em>Untitled Goose Game</em> reference",
+    "Bad Bunny (musician)",
+    "Bad Bunny (moral judgment)",
+    "\"Murder of Crows\" joke",
+    "Pigeonhole Principle",
 ];
 
 // From https://github.com/bryc/code/blob/master/jshash/experimental/cyrb53.js
