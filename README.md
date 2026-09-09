@@ -121,6 +121,7 @@ var PHRASE_LIST = [
     "Bogo active on the case",
     "Real Outback Island visited",
     "Outback Island neighborhood visited",
+    "<em>Untitled Goose Game</em> reference",
 ];
 
 // From https://github.com/bryc/code/blob/master/jshash/experimental/cyrb53.js
