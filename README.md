@@ -127,6 +127,8 @@ var PHRASE_LIST = [
     "\"Murder of Crows\" joke",
     "Pigeonhole Principle",
     "\"Duck Duck Goose\" joke",
+    "Nick's former romantic partner",
+    "Judy's former romantic partner",
 ];
 
 // From https://github.com/bryc/code/blob/master/jshash/experimental/cyrb53.js
